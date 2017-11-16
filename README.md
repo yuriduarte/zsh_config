@@ -1,16 +1,29 @@
-My Bash Configuration
+My Zsh Configuration
 =====================
 
 About
 -----
 
-This is my bash configuration inspired by [fnando] configuration (that is more complete than this one).
+This is my zsh configuration.
 
 How to use
 ----------
 
-Just clone this repository and load the init.sh file. I do it this way:
+First install the oh my zsh:
 
-    $ git clone git://github.com/jhonathas/bash_config.git ~/.bash.d
-    $ echo "source ~/.bash.d/init.sh" > ~/.bash_profile
-    $ source ~/.bash_profile
+OSX:
+
+		$ curl -L http://install.ohmyz.sh | sh
+
+LINUX:
+
+		$ sudo apt-get install zsh
+		$ wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+		$ chsh -s /bin/zsh
+		restart
+
+Now, just clone this repository and load the init.sh file. I do it this way:
+
+    $ git clone git@github.com:jhonathas/zsh_config.git ~/.zsh.d
+    $ echo 'source ~/.zsh.d/init.sh' > ~/.zshrc
+    $ source ~/.zshrc
