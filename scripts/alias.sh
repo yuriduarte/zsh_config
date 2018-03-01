@@ -1,9 +1,15 @@
 alias ll="ls -Glahs"
 alias ls="/bin/ls -G"
 alias psgrep="ps aux | egrep -v egrep | egrep"
-alias editzsh="emacs ~/.zsh.d/"
+
+# alias edit="emacs"
+function edit() {
+  emacs $1 &
+}
+
+alias editzsh="edit ~/.zsh.d/"
 alias goemacs="cd ~/.emacs.d/"
-alias editemacs="emacs ~/.emacs.d/"
+alias editemacs="edit ~/.emacs.d/"
 
 # Elixir
 alias mt="mix test"
@@ -52,6 +58,12 @@ alias kpostgres="pg_ctl stop"
 
 # React Native
 alias rn="react-native"
+alias rn-ios="rn run-ios"
+alias rn-android="rn run-android"
+alias rn-start="npm start -- --reset-cache"
 
 # Bash
 alias copy_key="cat ~/.ssh/id_rsa.pub | pbcopy"
+
+# Ember
+alias es="ember s"
