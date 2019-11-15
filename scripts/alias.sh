@@ -7,6 +7,8 @@ function edit() {
   emacs $1 &
 }
 
+# alias edit="mvim"
+
 alias editzsh="edit ~/.zsh.d/"
 alias goemacs="cd ~/.emacs.d/"
 alias editemacs="edit ~/.emacs.d/"
@@ -19,6 +21,7 @@ alias mta="mix test.all"
 alias mtf="mix test.feature"
 alias mtds="mix test.debug --stale"
 alias mps="mix phx.server"
+alias mpr="mix phx.routes"
 alias mted="MIX_ENV=test mix ecto.drop"
 alias mdg="mix deps.get"
 
@@ -36,20 +39,24 @@ alias gs="git status"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gm="git merge --no-ff"
+alias gp="git push -u && git push --tags"
 alias gpm="git push origin master"
 alias gf="git fetch origin -p"
 alias glog="git log --graph"
 alias gpr="git pull --rebase"
-alias gch="git checkout"
+alias gc="git checkout"
+alias gcm="git checkout master"
+alias gcd="git checkout develop"
+
+function gcf() {
+  git checkout feature/$1
+}
 
 alias gffs="git flow feature start"
 alias gfff="git flow feature finish"
 alias gffp="git flow feature publish"
 alias gfft="git flow feature track"
 
-function gfc() {
-  git checkout feature/$1
-}
 
 # ASDF
 alias redis="redis-server . &"
@@ -67,3 +74,7 @@ alias copy_key="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 # Ember
 alias es="ember s"
+
+
+# Commons
+alias rmds="find . -name '.DS_Store' -type f -delete"

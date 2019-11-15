@@ -21,5 +21,10 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 
 # Node
+export PATH=$PATH:~/.asdf/installs/nodejs/10.13.0/.npm/bin/
 
-export PATH="/Users/jhonathas/.asdf/installs/nodejs/8.9.1/.npm/bin:$PATH"
+export PATH="/Users/yuriduarte/.asdf/installs/nodejs/8.9.4/.npm/bin:$PATH"
+export PATH="~/Users/yuriduarte/.asdf/installs/nodejs/10.13.0/.npm/bin:$PATH"
+export PATH="~/.asdf/installs/nodejs/8.9.1/.npm/bin:$PATH"
+export PATH="~/.asdf/installs/nodejs/8.9.4/.npm/bin:$PATH"
+export PATH="~/.asdf/installs/nodejs/10.13.0/.npm/bin:$PATH"

@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="jhonathas"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +56,7 @@ plugins=(git, asdf)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+DEFAULT_USER="yuriduarte"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
